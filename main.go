@@ -16,5 +16,12 @@ func main() {
 	ContaDaBruna := ContaCorrente{"Bruna", 222, 111222, 200}
 	fmt.Println(ContaDoJoao)
 	fmt.Println(ContaDaBruna) 
+
+	var contaDaCris *ContaCorrente
+	contaDaCris = new(ContaCorrente)
+	contaDaCris.titular = "Cris"
+	contaDaCris.saldo = 500.50
+
+	fmt.Println(*contaDaCris)
+
 }
-	
